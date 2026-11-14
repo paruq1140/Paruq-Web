@@ -12,20 +12,63 @@
 </head>
 <body>
 
-    <!-- ====================== TOP NAVIGATION BAR ====================== -->
-    <nav class="topbar">
-        <a class="brand" href="#hero">
-            <span class="dot"></span>
-            KYO<span>.MINING</span>
-        </a>
-        <div class="nav-index">
-            <a href="#hero">01 / Command</a>
-            <a href="#telemetry">02 / Telemetry</a>
-            <a href="#concessions">03 / Concessions</a>
-            <a href="#reclamation">04 / Reclamation</a>
-            <a href="#contact">05 / Executive Contact</a>
+    <!-- ====================== FLOATING PILL TOP NAVBAR ====================== -->
+    <header class="navbar-wrapper">
+        <nav class="topbar" aria-label="Primary Navigation">
+            <!-- Brand Identity matching uploaded reference -->
+            <a class="brand" href="#hero">
+                <div class="brand-badge">K</div>
+                <div class="brand-text">
+                    <span class="brand-title">KYO <i>//</i> RESOURCES</span>
+                    <span class="brand-sub">M. RIZQI AL-MUBARAK</span>
+                </div>
+            </a>
+
+            <!-- Desktop Section Links (OPS: ACTIVE removed) -->
+            <div class="nav-links">
+                <a href="#about">About Me</a>
+                <a href="#telemetry">Telemetry</a>
+                <a href="#concessions">Concessions</a>
+                <a href="#reclamation">Reclamation</a>
+            </div>
+
+            <!-- Right Actions: Connect CTA + Mobile Droplist Trigger -->
+            <div class="nav-actions">
+                <a href="#contact" class="connect-btn">Connect</a>
+                <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-expanded="false" aria-controls="mobileDroplist" aria-label="Buka Menu Navigasi">
+                    <span class="hamburger-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Droplist Menu -->
+        <div class="mobile-droplist" id="mobileDroplist" aria-hidden="true">
+            <a href="#about" class="mobile-nav-item">
+                <span class="nav-num">01</span>
+                <span>About Me (Owner Profile)</span>
+            </a>
+            <a href="#telemetry" class="mobile-nav-item">
+                <span class="nav-num">02</span>
+                <span>Operational Telemetry</span>
+            </a>
+            <a href="#concessions" class="mobile-nav-item">
+                <span class="nav-num">03</span>
+                <span>Mining Concessions</span>
+            </a>
+            <a href="#reclamation" class="mobile-nav-item">
+                <span class="nav-num">04</span>
+                <span>ESG Reclamation</span>
+            </a>
+            <a href="#contact" class="mobile-nav-item mobile-connect-link">
+                <span class="nav-num">05</span>
+                <span>Connect &amp; Executive Inquiry</span>
+            </a>
         </div>
-    </nav>
+    </header>
 
     <!-- ====================== 01 HERO & ELASTIC TENSION CABLE ====================== -->
     <section class="hero" id="hero">
@@ -34,7 +77,7 @@
         <div class="hero-content">
             <div class="hero-badge">
                 <span class="pulse-ring"></span>
-                <span>EXECUTIVE DIRECTOR // PT NUSANTARA MINERAL ENERGI</span>
+                <span>OWNER &amp; EXECUTIVE DIRECTOR // PT NUSANTARA MINERAL ENERGI</span>
             </div>
             
             <h1 class="hero-title">M. RIZQI <b>AL-MUBARAK</b></h1>
@@ -42,7 +85,7 @@
                 Arsitek Konsesi Pertambangan, Hilirisasi Nikel &amp; Operasional Energi Skala Besar. Mengendalikan rantai pasok sumber daya strategis dari hulu ke hilir dengan presisi rekayasa modern.
             </p>
 
-            <!-- Interactive Elastic Cable (Kinetic Reference) -->
+            <!-- Interactive Elastic Cable -->
             <div class="cable-container">
                 <div class="cable-header">
                     <span class="mono-label">HOIST TENSION SIMULATOR // PULL CABLE</span>
@@ -79,7 +122,59 @@
         </div>
     </section>
 
-    <!-- ====================== 02 OPERATIONAL TELEMETRY (NEXUS MACRO) ====================== -->
+    <!-- ====================== 02 ABOUT ME (MINING OWNER PROFILE) ====================== -->
+    <section class="about-section" id="about">
+        <div class="section-header">
+            <span class="mono-tag">01 / ABOUT THE OWNER</span>
+            <h2>VISI KEPEMIMPINAN <i>INDUSTRI</i></h2>
+        </div>
+
+        <div class="about-grid">
+            <div class="about-card-visual">
+                <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1000&q=80" alt="M. Rizqi Al-Mubarak - Mining Executive" class="owner-photo">
+                <div class="owner-overlay">
+                    <span class="owner-role">FOUNDER &amp; PRINCIPAL OWNER</span>
+                    <h3>M. Rizqi Al-Mubarak (Kyo)</h3>
+                    <p>Jember • Kalimantan Timur • Sulawesi Tenggara</p>
+                </div>
+            </div>
+
+            <div class="about-details">
+                <p class="about-lead">
+                    Sebagai pemilik dan pengendali utama <strong>PT Nusantara Mineral Energi</strong>, saya memimpin pengembangan konsesi mineral strategis yang menggabungkan efisiensi ekstraksi berat dengan tata kelola teknologi modern.
+                </p>
+                <p class="about-body">
+                    Berawal dari pengelolaan logistik energi dan kemitraan alat berat, ekspansi grup kami kini mencakup blok batu bara kalori tinggi di Kalimantan serta tambang nikel laterit terintegrasi HPAL untuk ekosistem baterai kendaraan listrik global. Setiap lini operasi diawasi langsung menggunakan telemetri berbasis data dan standar keselamatan tanpa kompromi.
+                </p>
+
+                <div class="about-pillars">
+                    <div class="pillar-item">
+                        <span class="pillar-code">P.01</span>
+                        <div>
+                            <h4>Integrasi Hulu ke Hilir</h4>
+                            <p>Penguasaan penuh mulai dari eksplorasi IUP, jalur hauling pribadi, hingga terminal jetty ekspor.</p>
+                        </div>
+                    </div>
+                    <div class="pillar-item">
+                        <span class="pillar-code">P.02</span>
+                        <div>
+                            <h4>Digital Pit Command</h4>
+                            <p>Pemantauan tonase, konsumsi bahan bakar armada, dan pemetaan LiDAR secara real-time.</p>
+                        </div>
+                    </div>
+                    <div class="pillar-item">
+                        <span class="pillar-code">P.03</span>
+                        <div>
+                            <h4>Reklamasi Berkelanjutan</h4>
+                            <p>Komitmen penuh terhadap pemulihan ekosistem hutan tropis pasca-operasi tambang.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================== 03 OPERATIONAL TELEMETRY ====================== -->
     <section class="telemetry-section" id="telemetry">
         <div class="section-header">
             <span class="mono-tag">02 / REAL-TIME PIT COMMAND</span>
@@ -87,16 +182,13 @@
         </div>
 
         <div class="macro-stage">
-            <!-- Open Pit Mining Visual -->
             <img class="macro-img" src="https://images.unsplash.com/photo-1578319439584-104c94d37305?auto=format&fit=crop&w=1800&q=80" alt="Open Pit Mining Operations">
             <div class="macro-shade" aria-hidden="true"></div>
             
-            <!-- Precision Crosshairs -->
             <div class="crosshair-v" aria-hidden="true"></div>
             <div class="crosshair-h" aria-hidden="true"></div>
             <div class="node-dot" aria-hidden="true"></div>
 
-            <!-- Glassmorphic Telemetry HUD -->
             <div class="node-box">
                 <p class="node-box-tag">PIT SECTOR // KALIMANTAN-04 TELEMETRY</p>
                 <div class="node-stat"><span>DAILY COAL OUTPUT</span><span class="gold">48,250 MT</span></div>
@@ -112,7 +204,7 @@
         </div>
     </section>
 
-    <!-- ====================== 03 MATRIX ACCORDION CONCESSIONS ====================== -->
+    <!-- ====================== 04 MATRIX ACCORDION CONCESSIONS ====================== -->
     <section class="matrix-section" id="concessions">
         <div class="section-header">
             <span class="mono-tag">03 / ASSET PORTFOLIO</span>
@@ -207,7 +299,7 @@
         </div>
     </section>
 
-    <!-- ====================== 04 LENTICULAR RECLAMATION SWEEP ====================== -->
+    <!-- ====================== 05 LENTICULAR RECLAMATION SWEEP ====================== -->
     <section class="reclamation-section" id="reclamation">
         <div class="section-header">
             <span class="mono-tag">04 / SUSTAINABLE ESG COMMITMENT</span>
@@ -217,19 +309,16 @@
 
         <div class="lenti-wrapper">
             <div class="lenti-stage" id="lentiStage">
-                <!-- After Image (Green Reclamation) -->
                 <div class="lenti-layer lenti-after">
                     <img src="https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=1600&q=80" alt="Reclaimed Forest Ecosystem">
                     <span class="lenti-badge badge-after">FASE 02 // REKLAMASI HUTAN HIJAU (100% REVEGETASI)</span>
                 </div>
                 
-                <!-- Before Image (Active Open Pit) -->
                 <div class="lenti-layer lenti-before" id="lentiBefore">
                     <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=1600&q=80" alt="Active Open Pit Extraction">
                     <span class="lenti-badge badge-before">FASE 01 // EKSTRAKSI TAMBANG TERBUKA</span>
                 </div>
 
-                <!-- Interactive Divider Handle -->
                 <div class="lenti-divider" id="lentiDivider">
                     <div class="lenti-handle">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
@@ -241,7 +330,7 @@
         </div>
     </section>
 
-    <!-- ====================== 05 EXECUTIVE CONTACT & SOCIALS ====================== -->
+    <!-- ====================== 06 EXECUTIVE CONTACT & SOCIALS ====================== -->
     <footer class="contact-section" id="contact">
         <div class="contact-grid">
             <div class="contact-info">
@@ -249,14 +338,12 @@
                 <h2 class="scatter" id="scatterTitle">KYO // INITIATE DEAL</h2>
                 <p>Terbuka untuk diskusi strategis terkait joint venture konsesi, pasokan batu bara &amp; nikel jangka panjang, investasi alat berat, maupun kolaborasi proyek teknologi industri.</p>
 
-                <!-- Direct Contact Person Cards with Official Logos -->
                 <div class="social-cards">
                     <!-- WhatsApp -->
                     <a href="https://wa.me/6281234567890?text=Halo%20Mas%20Kyo,%20saya%20tertarik%20membahas%20kerja%20sama%20sektor%20pertambangan." target="_blank" rel="noopener" class="social-card wa-card">
                         <div class="social-icon">
-                            <!-- Official WhatsApp SVG -->
                             <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                                <path d="M12.031 2c-5.516 0-9.969 4.453-9.969 9.969 0 1.758.459 3.475 1.331 4.988L2 22l5.188-1.359a9.927 9.927 0 0 0 4.843 1.258h.004c5.515 0 9.968-4.453 9.968-9.969 0-2.663-1.037-5.167-2.92-7.05A9.903 9.903 0 0 0 12.031 2zm5.816 14.269c-.246.693-1.431 1.326-1.994 1.409-.513.076-1.163.108-1.878-.119-.434-.138-.99-.322-1.703-.63-2.996-1.294-4.953-4.311-5.103-4.511-.149-.2-1.219-1.622-1.219-3.094 0-1.472.771-2.196 1.045-2.495.274-.299.598-.374.797-.374.199 0 .399.002.573.01.184.009.431-.07.674.514.249.598.847 2.069.922 2.219.075.15.125.324.025.524-.1.2-.15.324-.299.499-.15.175-.315.39-.449.524-.15.15-.306.312-.131.611.174.299.775 1.279 1.664 2.071 1.144 1.02 2.108 1.336 2.407 1.486.299.15.474.125.648-.075.175-.2.748-.873.947-1.172.2-.299.399-.249.673-.15.274.1 1.744.823 2.043.972.299.15.498.224.573.349.075.125.075.723-.171 1.416z"/>
+                                <path d="M12.031 2c-5.516 0-9.969 4.453-9.969 9.969 0 1.758.459 3.475 1.331 4.988L2 22l5.188-1.359a9.927 9.927 0 0 0 4.843 1.258h.004c5.515 0 9.968-4.453 9.968-9.969 0-2.663-1.037-5.167-2.92-7.05A9.903 9.903 0 0 0 12.031 2zm5.816 14.269c-.246.693-1.431 1.326-1.994 1.409-.513.076-1.163.108-1.878-.119-.434-.138-.99-.322-1.703-.63-2.996-1.294-4.953-4.311-5.103-4.511-.149-.2-1.219-1.622-1.219-3.094 0-1.472.771-2.196 1.045-2.495.274-.299.598-.374.797-.374.199 0 .399.002.573.01.184.009.431-.07.674.514.249.598.847 2.069.922 2.219.075.15.125.324.025.524-.1.2-.15.324-.299.499-.15.175-.315.39-.449.524-.15.15-.306.312-.131.611.174.299.775 1.279 1.664 2.071 1.144 1.02 2.108 1.336 2.407 1.486.299.15.474.125.648-.075.175-.2.748-.873.947-1.172.2-.299.399-.249.673-.15.274.1 1.744.823 2043.972.299.15.498.224.573.349.075.125.075.723-.171 1.416z"/>
                             </svg>
                         </div>
                         <div class="social-meta">
@@ -269,7 +356,6 @@
                     <!-- Instagram -->
                     <a href="https://instagram.com/kyo.mining" target="_blank" rel="noopener" class="social-card ig-card">
                         <div class="social-icon">
-                            <!-- Official Instagram SVG -->
                             <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                                 <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
                             </svg>
@@ -284,7 +370,6 @@
                     <!-- GitHub -->
                     <a href="https://github.com/Rizztechno" target="_blank" rel="noopener" class="social-card gh-card">
                         <div class="social-icon">
-                            <!-- Official GitHub SVG -->
                             <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                                 <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
                             </svg>
@@ -341,9 +426,9 @@
         </div>
     </footer>
 
-    <!-- Floating HUD Bar (Nexus Reference) -->
+    <!-- Floating Scroll Progress HUD -->
     <div class="hud-bar">
-        <span class="hud-status"><span class="dot"></span> SYSTEM ONLINE // PIT-04</span>
+        <span class="hud-status"><span class="dot"></span> PIT-04 TELEMETRY</span>
         <div class="hud-progress-wrap">
             <div class="hud-track"><div class="hud-fill" id="hudFill"></div></div>
             <span class="hud-pct" id="hudPct">000%</span>
