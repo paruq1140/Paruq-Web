@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KYO // Executive Mining & Mineral Resources Portfolio</title>
+    <meta name="description" content="Portofolio Eksekutif Industri Pertambangan, Batu Bara, Nikel, dan Sumber Daya Alam - M. Rizqi Al-Mubarak (Kyo).">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ====================== TOP NAVIGATION BAR ====================== -->
+    <nav class="topbar">
+        <a class="brand" href="#hero">
+            <span class="dot"></span>
+            KYO<span>.MINING</span>
+        </a>
+        <div class="nav-index">
+            <a href="#hero">01 / Command</a>
+            <a href="#telemetry">02 / Telemetry</a>
+            <a href="#concessions">03 / Concessions</a>
+            <a href="#reclamation">04 / Reclamation</a>
+            <a href="#contact">05 / Executive Contact</a>
+        </div>
+    </nav>
+
+    <!-- ====================== 01 HERO & ELASTIC TENSION CABLE ====================== -->
+    <section class="hero" id="hero">
+        <div class="hero-grid" aria-hidden="true"></div>
+        
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="pulse-ring"></span>
+                <span>EXECUTIVE DIRECTOR // PT NUSANTARA MINERAL ENERGI</span>
+            </div>
+            
+            <h1 class="hero-title">M. RIZQI <b>AL-MUBARAK</b></h1>
+            <p class="hero-subtitle">
+                Arsitek Konsesi Pertambangan, Hilirisasi Nikel &amp; Operasional Energi Skala Besar. Mengendalikan rantai pasok sumber daya strategis dari hulu ke hilir dengan presisi rekayasa modern.
+            </p>
+
+            <!-- Interactive Elastic Cable (Kinetic Reference) -->
+            <div class="cable-container">
+                <div class="cable-header">
+                    <span class="mono-label">HOIST TENSION SIMULATOR // PULL CABLE</span>
+                    <span class="mono-value" id="tensionReadout">LOAD: 000.0 kN</span>
+                </div>
+                <svg class="string-svg" id="stringSvg" preserveAspectRatio="none" aria-hidden="true">
+                    <line class="string-guide" id="guideLine"></line>
+                    <path class="string-path" id="stringPath"></path>
+                    <circle class="string-anchor" id="anchorL" r="6"></circle>
+                    <circle class="string-anchor" id="anchorR" r="6"></circle>
+                    <circle class="string-grip" id="grip" r="9"></circle>
+                </svg>
+            </div>
+
+            <!-- Executive Metrics -->
+            <div class="hero-metrics">
+                <div class="metric-card">
+                    <span class="metric-num">142.8M</span>
+                    <span class="metric-label">Metric Tons Proven Reserves</span>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-num">48,500</span>
+                    <span class="metric-label">Hectares Active Concessions</span>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-num">320+</span>
+                    <span class="metric-label">Heavy Haulage &amp; Excavator Units</span>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-num">99.2%</span>
+                    <span class="metric-label">Zero-Harm Safety Index</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================== 02 OPERATIONAL TELEMETRY (NEXUS MACRO) ====================== -->
+    <section class="telemetry-section" id="telemetry">
+        <div class="section-header">
+            <span class="mono-tag">02 / REAL-TIME PIT COMMAND</span>
+            <h2>PRESISI OPERASIONAL <i>LAPANGAN</i></h2>
+        </div>
+
+        <div class="macro-stage">
+            <!-- Open Pit Mining Visual -->
+            <img class="macro-img" src="https://images.unsplash.com/photo-1578319439584-104c94d37305?auto=format&fit=crop&w=1800&q=80" alt="Open Pit Mining Operations">
+            <div class="macro-shade" aria-hidden="true"></div>
+            
+            <!-- Precision Crosshairs -->
+            <div class="crosshair-v" aria-hidden="true"></div>
+            <div class="crosshair-h" aria-hidden="true"></div>
+            <div class="node-dot" aria-hidden="true"></div>
+
+            <!-- Glassmorphic Telemetry HUD -->
+            <div class="node-box">
+                <p class="node-box-tag">PIT SECTOR // KALIMANTAN-04 TELEMETRY</p>
+                <div class="node-stat"><span>DAILY COAL OUTPUT</span><span class="gold">48,250 MT</span></div>
+                <div class="node-stat"><span>CALORIFIC GRADE</span><span>6,450 GAR</span></div>
+                <div class="node-stat"><span>STRIPPING RATIO</span><span>1 : 4.2</span></div>
+                <div class="node-stat"><span>FLEET UPTIME</span><span class="green">97.8%</span></div>
+            </div>
+
+            <div class="macro-caption">
+                <span class="mono-label">SATELLITE &amp; LIDAR DISPATCH</span>
+                <h3>Setiap tonase terpantau secara real-time.</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================== 03 MATRIX ACCORDION CONCESSIONS ====================== -->
+    <section class="matrix-section" id="concessions">
+        <div class="section-header">
+            <span class="mono-tag">03 / ASSET PORTFOLIO</span>
+            <h2>KONSESI &amp; <i>INFRASTRUKTUR</i></h2>
+            <p>Pilih sektor operasional untuk membuka spesifikasi cadangan, armada, dan kapasitas ekspor.</p>
+        </div>
+
+        <div class="matrix-accordion" id="matrixAccordion">
+            <!-- Slice 1 -->
+            <div class="slice active" tabindex="0" role="button" aria-expanded="true">
+                <img class="slice-img" src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80" alt="Thermal Coal Pit">
+                <div class="slice-shade"></div>
+                <div class="slice-idle">
+                    <span class="slice-num">S.01</span>
+                    <span class="slice-idle-title">Thermal Coal</span>
+                    <span class="slice-plus">+</span>
+                </div>
+                <div class="slice-reveal">
+                    <span class="mono-label">S.01 / ENERGY EXTRACTION</span>
+                    <h3>High-Calorie Thermal Coal</h3>
+                    <p>Blok konsesi batu bara kalori tinggi di Kalimantan Timur dengan akses jalur hauling pribadi sepanjang 68 km menuju terminal tongkang berkapasitas 15 juta ton per tahun.</p>
+                    <div class="slice-tags">
+                        <span>6,400+ GAR</span>
+                        <span>32,000 Ha</span>
+                        <span>Private Jetty</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slice 2 -->
+            <div class="slice" tabindex="0" role="button" aria-expanded="false">
+                <img class="slice-img" src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=1200&q=80" alt="Nickel Smelter">
+                <div class="slice-shade"></div>
+                <div class="slice-idle">
+                    <span class="slice-num">S.02</span>
+                    <span class="slice-idle-title">Nickel &amp; EV</span>
+                    <span class="slice-plus">+</span>
+                </div>
+                <div class="slice-reveal">
+                    <span class="mono-label">S.02 / BATTERY METALS</span>
+                    <h3>Laterite Nickel &amp; HPAL</h3>
+                    <p>Eksplorasi bijih nikel kadar tinggi (Saprolite &amp; Limonite) di Sulawesi Tenggara yang terintegrasi langsung dengan fasilitas pemurnian HPAL untuk rantai pasok baterai EV global.</p>
+                    <div class="slice-tags">
+                        <span>Ni 1.85% Avg</span>
+                        <span>HPAL Integrated</span>
+                        <span>11,500 Ha</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slice 3 -->
+            <div class="slice" tabindex="0" role="button" aria-expanded="false">
+                <img class="slice-img" src="https://images.unsplash.com/photo-1610375461246-83df859d849d?auto=format&fit=crop&w=1200&q=80" alt="Gold Bullion">
+                <div class="slice-shade"></div>
+                <div class="slice-idle">
+                    <span class="slice-num">S.03</span>
+                    <span class="slice-idle-title">Precious Metals</span>
+                    <span class="slice-plus">+</span>
+                </div>
+                <div class="slice-reveal">
+                    <span class="mono-label">S.03 / BULLION &amp; COPPER</span>
+                    <h3>Gold &amp; Copper Deposits</h3>
+                    <p>Operasi tambang emas aluvial dan urat kuarsa bawah tanah dengan teknologi pemisahan bebas merkuri dan tingkat kemurnian bullion hingga 99.99%.</p>
+                    <div class="slice-tags">
+                        <span>99.99% Au</span>
+                        <span>Zero-Mercury</span>
+                        <span>5,000 Ha</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slice 4 -->
+            <div class="slice" tabindex="0" role="button" aria-expanded="false">
+                <img class="slice-img" src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80" alt="Heavy Equipment Fleet">
+                <div class="slice-shade"></div>
+                <div class="slice-idle">
+                    <span class="slice-num">S.04</span>
+                    <span class="slice-idle-title">Heavy Fleet</span>
+                    <span class="slice-plus">+</span>
+                </div>
+                <div class="slice-reveal">
+                    <span class="mono-label">S.04 / LOGISTICS &amp; MACHINERY</span>
+                    <h3>Ultra-Class Mining Fleet</h3>
+                    <p>Armada mandiri yang terdiri dari Dump Truck kelas 200-ton, Hydraulic Excavator PC2000, dan sistem manajemen bahan bakar otomatis berbasis IoT.</p>
+                    <div class="slice-tags">
+                        <span>320+ Units</span>
+                        <span>IoT Fuel Sync</span>
+                        <span>24/7 Dispatch</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================== 04 LENTICULAR RECLAMATION SWEEP ====================== -->
+    <section class="reclamation-section" id="reclamation">
+        <div class="section-header">
+            <span class="mono-tag">04 / SUSTAINABLE ESG COMMITMENT</span>
+            <h2>GESER UNTUK MELIHAT <i>REKLAMASI</i></h2>
+            <p>Transformasi lahan pasca-tambang menjadi ekosistem hutan tropis produktif dan danau konservasi air bersih.</p>
+        </div>
+
+        <div class="lenti-wrapper">
+            <div class="lenti-stage" id="lentiStage">
+                <!-- After Image (Green Reclamation) -->
+                <div class="lenti-layer lenti-after">
+                    <img src="https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=1600&q=80" alt="Reclaimed Forest Ecosystem">
+                    <span class="lenti-badge badge-after">FASE 02 // REKLAMASI HUTAN HIJAU (100% REVEGETASI)</span>
+                </div>
+                
+                <!-- Before Image (Active Open Pit) -->
+                <div class="lenti-layer lenti-before" id="lentiBefore">
+                    <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=1600&q=80" alt="Active Open Pit Extraction">
+                    <span class="lenti-badge badge-before">FASE 01 // EKSTRAKSI TAMBANG TERBUKA</span>
+                </div>
+
+                <!-- Interactive Divider Handle -->
+                <div class="lenti-divider" id="lentiDivider">
+                    <div class="lenti-handle">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                            <path d="M15 18l6-6-6-6M9 6l-6 6 6 6"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================== 05 EXECUTIVE CONTACT & SOCIALS ====================== -->
+    <footer class="contact-section" id="contact">
+        <div class="contact-grid">
+            <div class="contact-info">
+                <span class="mono-tag">05 / DIRECT EXECUTIVE CHANNEL</span>
+                <h2 class="scatter" id="scatterTitle">KYO // INITIATE DEAL</h2>
+                <p>Terbuka untuk diskusi strategis terkait joint venture konsesi, pasokan batu bara &amp; nikel jangka panjang, investasi alat berat, maupun kolaborasi proyek teknologi industri.</p>
+
+                <!-- Direct Contact Person Cards with Official Logos -->
+                <div class="social-cards">
+                    <!-- WhatsApp -->
+                    <a href="https://wa.me/6281234567890?text=Halo%20Mas%20Kyo,%20saya%20tertarik%20membahas%20kerja%20sama%20sektor%20pertambangan." target="_blank" rel="noopener" class="social-card wa-card">
+                        <div class="social-icon">
+                            <!-- Official WhatsApp SVG -->
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                <path d="M12.031 2c-5.516 0-9.969 4.453-9.969 9.969 0 1.758.459 3.475 1.331 4.988L2 22l5.188-1.359a9.927 9.927 0 0 0 4.843 1.258h.004c5.515 0 9.968-4.453 9.968-9.969 0-2.663-1.037-5.167-2.92-7.05A9.903 9.903 0 0 0 12.031 2zm5.816 14.269c-.246.693-1.431 1.326-1.994 1.409-.513.076-1.163.108-1.878-.119-.434-.138-.99-.322-1.703-.63-2.996-1.294-4.953-4.311-5.103-4.511-.149-.2-1.219-1.622-1.219-3.094 0-1.472.771-2.196 1.045-2.495.274-.299.598-.374.797-.374.199 0 .399.002.573.01.184.009.431-.07.674.514.249.598.847 2.069.922 2.219.075.15.125.324.025.524-.1.2-.15.324-.299.499-.15.175-.315.39-.449.524-.15.15-.306.312-.131.611.174.299.775 1.279 1.664 2.071 1.144 1.02 2.108 1.336 2.407 1.486.299.15.474.125.648-.075.175-.2.748-.873.947-1.172.2-.299.399-.249.673-.15.274.1 1.744.823 2.043.972.299.15.498.224.573.349.075.125.075.723-.171 1.416z"/>
+                            </svg>
+                        </div>
+                        <div class="social-meta">
+                            <span class="social-platform">WHATSAPP DIRECT</span>
+                            <span class="social-handle">+62 812-3456-7890</span>
+                        </div>
+                        <span class="social-arrow">↗</span>
+                    </a>
+
+                    <!-- Instagram -->
+                    <a href="https://instagram.com/kyo.mining" target="_blank" rel="noopener" class="social-card ig-card">
+                        <div class="social-icon">
+                            <!-- Official Instagram SVG -->
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </div>
+                        <div class="social-meta">
+                            <span class="social-platform">INSTAGRAM</span>
+                            <span class="social-handle">@kyo.mining</span>
+                        </div>
+                        <span class="social-arrow">↗</span>
+                    </a>
+
+                    <!-- GitHub -->
+                    <a href="https://github.com/Rizztechno" target="_blank" rel="noopener" class="social-card gh-card">
+                        <div class="social-icon">
+                            <!-- Official GitHub SVG -->
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                            </svg>
+                        </div>
+                        <div class="social-meta">
+                            <span class="social-platform">GITHUB REPOSITORY</span>
+                            <span class="social-handle">github.com/Rizztechno</span>
+                        </div>
+                        <span class="social-arrow">↗</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Executive Inquiry Box -->
+            <div class="inquiry-box">
+                <div class="inquiry-header">
+                    <span class="mono-label">CORPORATE DISPATCH // INQUIRY</span>
+                    <button type="button" class="copy-email-btn" id="copyEmailBtn" title="Salin Email Eksekutif">
+                        <span id="copyEmailText">kyo@nusantaramineral.co.id</span>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <form class="dispatch-form" id="dispatchForm">
+                    <div class="form-group">
+                        <label for="senderName">NAMA / PERUSAHAAN</label>
+                        <input type="text" id="senderName" placeholder="Contoh: PT Energi Global Tbk" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="sectorSelect">SEKTOR KERJA SAMA</label>
+                        <select id="sectorSelect">
+                            <option value="Offtake Batu Bara / Nikel">Offtake Batu Bara / Bijih Nikel</option>
+                            <option value="Joint Venture Konsesi">Joint Venture &amp; Akuisisi Konsesi</option>
+                            <option value="Kontrak Alat Berat & Hauling">Kontrak Alat Berat &amp; Hauling</option>
+                            <option value="Investasi & Pendanaan">Investasi &amp; Pendanaan Proyek</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="senderMessage">RINGKASAN PROPOSAL</label>
+                        <textarea id="senderMessage" rows="3" placeholder="Tuliskan volume kebutuhan, lokasi proyek, atau detail penawaran..." required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">KIRIM DISPATCH EKSEKUTIF <span>→</span></button>
+                    <p class="form-feedback" id="formFeedback"></p>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <span>© 2026 M. RIZQI AL-MUBARAK (KYO) // ALL RIGHTS RESERVED</span>
+            <span>HEADQUARTERS: JEMBER &amp; KALIMANTAN TIMUR, INDONESIA</span>
+        </div>
+    </footer>
+
+    <!-- Floating HUD Bar (Nexus Reference) -->
+    <div class="hud-bar">
+        <span class="hud-status"><span class="dot"></span> SYSTEM ONLINE // PIT-04</span>
+        <div class="hud-progress-wrap">
+            <div class="hud-track"><div class="hud-fill" id="hudFill"></div></div>
+            <span class="hud-pct" id="hudPct">000%</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
