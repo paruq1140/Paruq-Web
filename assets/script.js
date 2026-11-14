@@ -1,8 +1,9 @@
 /* ==========================================================================
-   EXECUTIVE MINING PORTFOLIO - INTERACTIVE PHYSICS & TELEMETRY CONTROLLER
+   EXECUTIVE MINING PORTFOLIO - INTERACTIVE PHYSICS, NAVIGATION & TELEMETRY
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
+    initMobileDroplist();
     initElasticCable();
     initMatrixAccordion();
     initLenticularSweep();
@@ -11,7 +12,42 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 /**
- * 1. Elastic Hoist Cable Simulator (Kinetic Physics Reference)
+ * 0. Mobile Droplist Toggle Controller
+ */
+function initMobileDroplist() {
+    const menuBtn = document.getElementById('mobileMenuBtn');
+    const droplist = document.getElementById('mobileDroplist');
+
+    if (!menuBtn || !droplist) return;
+
+    const toggleMenu = (forceClose = false) => {
+        const isOpen = forceClose ? false : !droplist.classList.contains('open');
+        droplist.classList.toggle('open', isOpen);
+        menuBtn.classList.toggle('open', isOpen);
+        menuBtn.setAttribute('aria-expanded', String(isOpen));
+        droplist.setAttribute('aria-hidden', String(!isOpen));
+    };
+
+    menuBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        toggleMenu();
+    });
+
+    // Close droplist when any navigation link inside it is clicked
+    droplist.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', () => toggleMenu(true));
+    });
+
+    // Close droplist when clicking outside navbar
+    document.addEventListener('click', (e) => {
+        if (!droplist.contains(e.target) && !menuBtn.contains(e.target)) {
+            toggleMenu(true);
+        }
+    });
+}
+
+/**
+ * 1. Elastic Hoist Cable Simulator
  */
 function initElasticCable() {
     const svg = document.getElementById('stringSvg');
@@ -103,7 +139,6 @@ function initElasticCable() {
         grip.setAttribute('cx', currentX);
         grip.setAttribute('cy', currentY);
 
-        // Calculate simulated load in KiloNewtons (kN)
         const deflection = Math.abs(currentY - midY);
         const loadKN = (deflection * 12.4).toFixed(1).padStart(5, '0');
         readout.textContent = `LOAD: ${loadKN} kN`;
